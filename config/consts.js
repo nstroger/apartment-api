@@ -11,7 +11,7 @@ export default {
   dbName          : process.env.dbName || 'apartments',
   dbUser          : process.env.dbUser || 'root',
   dbPassword      : process.env.dbPassword || 'password',
-  serverPort      : process.env.serverPort || 8000,
+  serverPort      : process.env.PORT || 8000,
   SALT_WORK_FACTOR: process.env.SALT_WORK_FACTOR || 10,
   JWT_SECRET      : process.env.JWT_SECRET || 'JWT_SECRET',
   ADMIN_EMAIL     : process.env.APARTMENT_ADMIN_EMAIL || 'admin@example.com',
