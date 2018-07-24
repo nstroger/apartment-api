@@ -15,10 +15,9 @@ const createAdmin = async () => {
   await user.save();
 }
 
-connectToDb();
+// connectToDb();
 
-  let admin;
-
+export default () => {
 User.findOne({ role: 'admin' })
   .then(user => {
     if (!user) {
@@ -28,3 +27,6 @@ User.findOne({ role: 'admin' })
   })
   .then(console.log)
   .catch(console.log);
+
+}
+
