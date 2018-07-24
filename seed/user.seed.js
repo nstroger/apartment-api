@@ -4,10 +4,10 @@ import connectToDb from '../config/db';
 
 const createAdmin = async () => {
   const user = new User({
-    email: 'admin@example.com',
+    email: process.env.ADMIN_EMAIL || 'admin@example.com',
     firstname: 'Admin',
     lastname: 'User',
-    password: 'qwer1234',
+    password: process.env.ADMIN_PASSWORD || 'qwer1234',
     role: 'admin',
     verified: true
   });
