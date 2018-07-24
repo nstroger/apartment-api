@@ -9,7 +9,7 @@ import config from './config/consts';
 import passportConfig from './config/passport';
 import connectToDb from './config/db';
 import { response, log } from './utils';
-import { createUsers } from './seed/user.seed';
+import createUsers from './seed/user.seed';
 
 import v1Routes from './routes/v1';
 
